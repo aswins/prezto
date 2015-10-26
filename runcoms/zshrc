@@ -11,3 +11,18 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+#
+export HISTFILE=~/.zsh_history
+export PATH="$HOME/bin:$PATH"
+
+
+# Add homebrew to the completion path
+fpath=("/usr/local/bin/" $fpath)
+
+# typing dir name cds
+setopt AUTO_CD
+
+# This makes cd=pushd
+setopt AUTO_PUSHD
+
+export EDITOR="vim"

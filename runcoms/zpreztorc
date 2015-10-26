@@ -25,13 +25,17 @@ zstyle ':prezto:*:*' color 'yes'
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
+  'git' \
   'terminal' \
   'editor' \
   'history' \
   'directory' \
   'spectrum' \
   'utility' \
+  'node' \
   'completion' \
+  'syntax-highlighting' \
+  'history-substring-search' \
   'prompt'
 
 #
@@ -85,7 +89,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'josh'
 
 #
 # Ruby
@@ -117,12 +121,11 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'cursor' \
-#   'root'
+ zstyle ':prezto:module:syntax-highlighting' highlighters \
+   'main' \
+   'brackets' \
+   'cursor' \
+   'root'
 #
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
